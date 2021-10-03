@@ -1,0 +1,30 @@
+PODS:
+  - FSCalendar (2.8.2)
+  - Realm (3.10.0):
+    - Realm/Headers (= 3.10.0)
+  - Realm/Headers (3.10.0)
+  - RealmSwift (3.10.0):
+    - Realm (= 3.10.0)
+  - SwiftConfettiView (0.1.0)
+
+DEPENDENCIES:
+  - FSCalendar
+  - RealmSwift (= 3.10.0)
+  - SwiftConfettiView
+
+SPEC REPOS:
+  trunk:
+    - FSCalendar
+    - Realm
+    - RealmSwift
+    - SwiftConfettiView
+
+SPEC CHECKSUMS:
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
+  RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
+  SwiftConfettiView: 1bdbc2e6913b6b1c76d8070802b212508ad5c352
+
+PODFILE CHECKSUM: 47625a1cf512215efc0e461340161433ca3f1639
+
+COCOAPODS: 1.10.0
