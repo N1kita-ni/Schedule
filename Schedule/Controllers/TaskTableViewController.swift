@@ -124,10 +124,6 @@ final class TaskTableViewController: UITableViewController {
                     self?.alertForNameNecessarily(text: "The string can't start with a space or be empty")
                 } else if text.count > 17 {
                     self?.alertForNameNecessarily(text: "Input lover 17 characters")
-                    //                    label.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
-                    //                    label.font.withSize(10)
-                    //                    label.isHighlighted = true
-                    //                    label.text = "Input lover 15 characters"
                 } else {
                     let corrextText = text.trimmingCharacters(in: NSCharacterSet.whitespaces)
                     label.text = corrextText
@@ -179,7 +175,6 @@ extension TaskTableViewController {
         }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       // return headerNameArray[section]
         switch section {
         case 0,1,2: return headerNameArray[section]
         default: return " "

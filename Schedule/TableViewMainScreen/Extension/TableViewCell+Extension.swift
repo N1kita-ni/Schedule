@@ -12,13 +12,6 @@ import UIKit
 extension TableViewCell {
     
     func setConstraintsTableViewCell() {
-//        self.addSubview(backView)
-//        NSLayoutConstraint.activate([
-//            backView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-//            backView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-//            backView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-//            backView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
-//            ])
         
         let mainStackView = UIStackView(arrangedSubviews: [taskName, location],
                                     axis: .horizontal,
