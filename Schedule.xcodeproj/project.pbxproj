@@ -17,7 +17,7 @@
 		F0049AD726D6E52100E3CCD3 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0049AD626D6E52100E3CCD3 /* TaskTableViewController.swift */; };
 		F0049ADD26D7BB7700E3CCD3 /* TableViewTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0049ADC26D7BB7700E3CCD3 /* TableViewTaskCell.swift */; };
 		F0049AF126D9A1AE00E3CCD3 /* ModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0049AF026D9A1AE00E3CCD3 /* ModelRealm.swift */; };
-		F0049AF526D9A36C00E3CCD3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0049AF426D9A36C00E3CCD3 /* RealmManager.swift */; };
+		F0049AF526D9A36C00E3CCD3 /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0049AF426D9A36C00E3CCD3 /* DatabaseConnection.swift */; };
 		F053ADF526D1702D0074D6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053ADF426D1702D0074D6FB /* AppDelegate.swift */; };
 		F053ADF726D1702D0074D6FB /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053ADF626D1702D0074D6FB /* ScheduleViewController.swift */; };
 		F053ADFA26D1702D0074D6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F053ADF826D1702D0074D6FB /* Main.storyboard */; };
@@ -37,7 +37,7 @@
 		F0049AD626D6E52100E3CCD3 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		F0049ADC26D7BB7700E3CCD3 /* TableViewTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTaskCell.swift; sourceTree = "<group>"; };
 		F0049AF026D9A1AE00E3CCD3 /* ModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRealm.swift; sourceTree = "<group>"; };
-		F0049AF426D9A36C00E3CCD3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F0049AF426D9A36C00E3CCD3 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
 		F053ADF126D1702D0074D6FB /* Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F053ADF426D1702D0074D6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F053ADF626D1702D0074D6FB /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		F0049AF326D9A35F00E3CCD3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F0049AF426D9A36C00E3CCD3 /* RealmManager.swift */,
+				F0049AF426D9A36C00E3CCD3 /* DatabaseConnection.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				F0049ACE26D6BC6D00E3CCD3 /* TableViewCell+Extension.swift in Sources */,
 				F0049AF126D9A1AE00E3CCD3 /* ModelRealm.swift in Sources */,
 				F053ADF726D1702D0074D6FB /* ScheduleViewController.swift in Sources */,
-				F0049AF526D9A36C00E3CCD3 /* RealmManager.swift in Sources */,
+				F0049AF526D9A36C00E3CCD3 /* DatabaseConnection.swift in Sources */,
 				F0049AD226D6CEC100E3CCD3 /* UIStackView+Extension.swift in Sources */,
 				F0049ADD26D7BB7700E3CCD3 /* TableViewTaskCell.swift in Sources */,
 				F0049AD726D6E52100E3CCD3 /* TaskTableViewController.swift in Sources */,

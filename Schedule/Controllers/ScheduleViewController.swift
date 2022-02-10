@@ -74,6 +74,7 @@ final class ScheduleViewController: UIViewController {
         scheduleOnDate(date: Date())
         
         view.addSubview(confettiView)
+         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (permissionGranted, error) in
             if (!permissionGranted) {
@@ -257,7 +258,7 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteRow = UIContextualAction(style: .destructive, title: "Delete") { [weak self] (_, _, _) in
-            RealmManager.shared.deleteScheduleModel(model: self?.scheduleModel[indexPath.row] ?? ModelRealm())
+            DatabaseConnection.shared.deleteScheduleModel(model: self?.scheduleModel[indexPath.row] ?? ModelRealm())
             tableView.reloadData()
         }
         
@@ -287,7 +288,7 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) in
                 self?.confettiView.stopConfetti()
             })
-            RealmManager.shared.deleteScheduleModel(model: (self?.scheduleModel[indexPath.row])!)
+            DatabaseConnection.shared.deleteScheduleModel(model: (self?.scheduleModel[indexPath.row])!)
             tableView.reloadData()
             
             alert.addAction(ok)

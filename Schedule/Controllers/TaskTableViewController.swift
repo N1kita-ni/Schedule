@@ -40,7 +40,7 @@ final class TaskTableViewController: UITableViewController {
         if scheduleModel.scheduleName.isEmpty {
             alertForNameNecessarily(text: "Input main task")
         } else {
-            RealmManager.shared.saveScheduleModel(model: scheduleModel)
+            DatabaseConnection.shared.saveScheduleModel(model: scheduleModel)
             scheduleModel = ModelRealm() // обновление модели чтобы не падало
             tableView.reloadData()
         }
